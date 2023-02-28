@@ -10,16 +10,25 @@
     
     <style>
         
-        body
+        body,html
         {
             width: 100%;
             height: 100vh;
+            background-image:url(fundo.jpg);
+            background-size: 100%;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
         }
         
         .meu_texto
         {   
-            position: absolute;
-            position: top;
+           
             animation: bounce 2s;
             width: 100%;
             display: flex;
@@ -27,7 +36,7 @@
             font-size: 50px;
             color: black;
             text-shadow: 1px 1px pink;
-            top: 480px;
+           
             animation: anima_texto  3s infinite alternate;
 
         }
@@ -38,19 +47,12 @@
         100% {opacity: 1;}
     }
     
-    .fundo{
-        background-image:url(fundo.jpg);
-        background-size: 250%;
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-    }
+   
     .roda{
-            position: absolute;
-            top: 550px;
+           
             width: 20px;
             height: 20px;
-            left: 45%;
+           
             background-color: transparent;
             border: 8px solid rgb(245, 88, 219);
             border-top: 8px solid transparent;
@@ -68,23 +70,26 @@
         
         .smiling
         {
-             position: absolute;
-             width: 900px;
-             left: -250px;
-             top: 80px;
+            
+             width: 300px;
+           
             
         }
         
     </style>
 </head>
 <body>
-<div class="fundo">
-    <div class="meu_texto">
-        Aguarde...
-    </div>
+
+   
      <img src="smiling.png" class="smiling">
 
-</div>  
+
+
+<div class="meu_texto">
+    Aguarde...
+</div>
+
+
 <div class="roda">
 
 </div>
