@@ -28,14 +28,15 @@
         
         .meu_texto
         {   
-           
+           position: absolute;
             animation: bounce 2s;
             width: 100%;
             display: flex;
             justify-content: center;
-            font-size: 50px;
+            font-size: 40px;
             color: black;
-            text-shadow: 1px 1px pink;
+            text-shadow: 1px 1px black;
+            top: 450px;
            
             animation: anima_texto  3s infinite alternate;
 
@@ -49,12 +50,11 @@
     
    
     .roda{
-           
+            position: absolute;
             width: 20px;
             height: 20px;
-           
+            top: 510px;
             background-color: transparent;
-            border: 8px solid rgb(245, 88, 219);
             border-top: 8px solid transparent;
             border-radius: 50%;
             animation: loading 2s infinite linear; 
@@ -62,16 +62,21 @@
 
     @keyframes loading{
 
-            0% {rotate: 0deg;}
-            100% {rotate: 360deg;}
+            0% {rotate: 0deg; border: 8px solid rgb(255, 0, 0); border-top: 8px solid transparent;}
+            25% {border: 8px solid rgb(88, 245, 96); border-top: 8px solid transparent;}
+            50% {border: 8px solid rgb(88, 214, 245); border-top: 8px solid transparent;}
+            100% {rotate: 360deg; border: 8px solid rgb(255, 0, 179); border-top: 8px solid transparent;}
 
         }
         
         
         .smiling
         {
-            
-             width: 300px;
+            position: absolute;
+             width: 340px;
+             top: 280px;
+            animation: andando  4s;
+            animation: jackInTheBox 2s;
            
             
         }
@@ -83,8 +88,7 @@
    
      <img src="smiling.png" class="smiling">
 
-
-
+     
 <div class="meu_texto">
     Aguarde...
 </div>
@@ -96,3 +100,4 @@
 
 </body>
 </html>
+
